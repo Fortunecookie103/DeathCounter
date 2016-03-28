@@ -13,6 +13,13 @@
                 DeathFile = My.Computer.FileSystem.OpenTextFileWriter("C:\Users/User/Documents/Deathcounter/Deaths.txt", True)
                 DeathFile.WriteLine("0")
                 DeathFile.Close()
+
+                Dim ObjReader As New System.IO.StreamReader("C:\Users/User/Documents/Deathcounter/Deaths.txt")
+
+                MainForm.DeathcounterINVISIBLE.Text = ObjReader.ReadToEnd
+                MainForm.Deaths.Text = MainForm.DeathcounterINVISIBLE.Text
+                ObjReader.Close()
+
             Else
                 Dim DeathFile As System.IO.StreamWriter
                 DeathFile = My.Computer.FileSystem.OpenTextFileWriter("C:\Users/User/Documents/Deathcounter/Deaths.txt", True)

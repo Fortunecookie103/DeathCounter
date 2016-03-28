@@ -96,7 +96,7 @@
         Me.Hide()
     End Sub
 
-    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs)
 
         If MsgBox("Are you sure you want to reset all your deaths?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
 
