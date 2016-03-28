@@ -31,7 +31,6 @@ Partial Class MainForm
         Me.AboutButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.DeathcounterINVISIBLE = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -119,15 +118,6 @@ Partial Class MainForm
         Me.DeathcounterINVISIBLE.Text = "0"
         Me.DeathcounterINVISIBLE.Visible = False
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(192, 233)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Reset"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(102, 262)
@@ -164,7 +154,6 @@ Partial Class MainForm
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(279, 331)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DeathcounterINVISIBLE)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.AboutButton)
@@ -201,7 +190,6 @@ Partial Class MainForm
     Friend WithEvents AboutButton As System.Windows.Forms.Button
     Friend WithEvents ExitButton As System.Windows.Forms.Button
     Friend WithEvents DeathcounterINVISIBLE As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class
